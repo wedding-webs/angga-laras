@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smoth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angga & Laras</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Ephesis&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.14.8/dist/cdn.min.js"
+    ></script>
+    <!-- Alpine Core -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"
+    ></script>
+  </head>
+  <body class="antialiased font-[lora] text-xl overflow-x-hidden bg-white">
+    <header
+      class=""
+      x-data="{ show: false }"
+      x-intersect="show = true"
+      x-intersect:leave.margin.0%="show = false"
+    >
+      <div class="relative h-svh w-full">
+        <img
+          src="img/WA0033.jpg"
+          alt=""
+          class="object-cover object-center w-full h-full"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-y-0 transition-all duration-1000 delay-200' : 'opacity-0 -translate-y-100'"
+        />
+        <div
+          class="absolute inset-0 bg-black"
+          x-cloak
+          x-bind:class="show ? 'opacity-70 transition-all duration-1500 delay-500' : 'opacity-0'"
+        ></div>
+        <div
+          class="absolute inset-0 flex items-center justify-center max-w-screen-xl mx-auto"
+        >
+          <div>
+            <div
+              class="text-center"
+              x-cloak
+              x-bind:class="show ? 'opacity-100 translate-y-0 transition-all duration-1500 delay-500' : 'opacity-0 translate-y-100'"
+            >
+              <p
+                class="mb-8 font-normal text-light-100 px-4 text-white font-medium text-2xl"
+              >
+                The Wedding Of
+              </p>
+              <h1 class="text-white font-[ephesis] text-8xl lg:text-9xl">
+                dr.Angga & dr.Laras
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      class="w-full h-screen absolute overflow-x-hidden rotate-150 opacity-70 top-100 lg:top-130 xl:top-180 -left-20 -z-10 bg-[url(img/assets/7.png)] bg-contain bg-no-repeat"
+    ></div>
+    <div
+      class="max-w-screen-md mx-auto text-center mt-6 p-4"
+      x-data="{ show: false }"
+      x-cloak
+      x-intersect.threshold.70="show = true"
+      x-intersect:leave.margin.0%="show = false"
+    >
+      <div
+        x-cloak
+        x-bind:class="show ? 'opacity-100 translate-y-0 transition-all duration-1000 delay-300' : 'opacity-0 translate-y-100'"
+      >
+        <p class="font-[amiri] lg:text-3xl mb-4">&#65021;</p>
+        <p class="text-base lg:text-xl">
+          "Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan
+          pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa
+          tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih
+          sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat
+          tanda-tanda (kebesaran Allah) bagi kaum yang berpikir"
+        </p>
+        <p class="italic text-gray-600 mt-4 text-lg lg:text-xl">
+          QS. Ar-rum:21
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-center max-w-screen-xl mx-auto">
+      <img class="w-64 -z-10" src="img/assets/8.png" alt="" />
+    </div>
+    <div
+      class="w-full h-screen absolute -z-10 bg-[url(img/assets/7.png)] overflow-x-hidden bg-contain bg-no-repeat opacity-70"
+    ></div>
+    <div
+      class="max-w-screen-xl mx-auto"
+      x-data="{ show: false }"
+      x-cloak
+      x-intersect.threshold.40="show = true"
+      x-intersect:leave.margin.0%="show = false"
+    >
+      <div class="flex gap-4 p-4">
+        <div
+          class="w-md ease-in-out"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1400 delay-100' : 'opacity-0 translate-x-500'"
+        >
+          <img src="img/WA0013.jpg" alt="" class="" />
+        </div>
+        <div
+          class="w-md"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1500 delay-150' : 'opacity-0 translate-x-500'"
+        >
+          <img src="img/WA0002.jpg" alt="" class="" />
+        </div>
+        <div
+          class="w-md"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1600 delay-200' : 'opacity-0 translate-x-500'"
+        >
+          <img src="img/WA0001.jpg" alt="" class="" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="max-w-screen-md mx-auto text-center mt-6 p-4"
+      x-data="{ show: false}"
+      x-intersect="show = true"
+      x-intersect:leave.margin.0%="show = false"
+    >
+      <p
+        class="text-base lg:text-xl"
+        x-cloak
+        x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1600 delay-200' : 'opacity-0 translate-x-500'"
+      >
+        Maha suci Allah yang telah menciptakan mahluk-Nya berpasang-pasangan. Ya
+        Allah, perkenalkanlah kami merangkaikan kasih sayang yang kau ciptakan
+        diantara kami.
+      </p>
+    </div>
+    <div class="w-full h-[700px] mt-6">
+      <div
+        class="h-full relative"
+        x-data="{ show: false}"
+        x-intersect.threshold.30="show = true"
+        x-intersect:leave.margin.30%="show = false"
+      >
+        <img
+          src="img/WA0005.jpg"
+          alt=""
+          class="object-cover h-full object-bottom w-full"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-y-0 transition duration-1500 delay-200' : 'opacity-0 translate-y-500'"
+        />
+        <div
+          class="absolute place-content-center text-center p-4 bg-purple-300 w-md md:w-xl lg:w-3xl -bottom-1/5 xl:-bottom-1/5 left-1/2 -translate-x-1/2"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-y-0 transition duration-1900 delay-500' : 'opacity-0 translate-y-500'"
+        >
+          <img
+            class="absolute w-128 rotate-55 left-0 -z-10 opacity-50"
+            src="img/assets/7.png"
+            alt=""
+          />
+          <img
+            class="absolute w-128 rotate-55 right-0 bottom-0 -z-10 opacity-50"
+            src="img/assets/6.png"
+            alt=""
+          />
+          <h1 class="font-[ephesis] text-4xl lg:text-5xl">
+            dr. Angga Setiawan, M.K.M.
+          </h1>
+          <p class="mt-2 lg:mt-4 text-base lg:text-xl">Putra Pertama Dari :</p>
+          <p class="font-bold text-base lg:text-xl">Bpk. Syawal & Ibu Santi</p>
+          <p class="font-[ephesis] text-3xl lg:text-5xl my-4">&</p>
+          <h1 class="font-[ephesis] text-4xl lg:text-5xl">
+            dr. Laras Kusumaningtyas
+          </h1>
+          <p class="mt-2 lg:mt-4 text-base lg:text-xl">Putri Pertama Dari :</p>
+          <p class="font-bold text-base lg:text-xl">
+            Bpk. Supawit, M. Pd. & Ibu Hanita Suryani, S. Pd.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w-full bg-purple-300 text-center p-8 mt-50">
+      <div
+        class="w-md mx-auto relative"
+        x-data="{ show: false}"
+        x-intersect.threshold.50="show = true"
+        x-intersect:leave.margin.0%="show = false"
+      >
+        <h2
+          class="font-[ephesis] text-4xl lg:text-5xl"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1500 delay-200' : 'opacity-0 translate-x-500'"
+        >
+          Acara Pernikahan
+        </h2>
+        <img
+          class="-top-15 left-8 w-36 absolute -rotate-30"
+          src="img/assets/14.png"
+          alt=""
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1500 delay-200' : 'opacity-0 -translate-x-500'"
+        />
+      </div>
+    </div>
+    <div
+      class="max-w-screen-md mx-auto text-center mt-6 p-4"
+      x-data="{ show: false}"
+      x-intersect.threshold.50="show = true"
+      x-intersect:leave.margin.0%="show = false"
+    >
+      <p
+        class="text-base lg:text-xl"
+        x-cloak
+        x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1500 delay-200' : 'opacity-0 translate-x-500'"
+      >
+        Dengan memohon Rahmat dan Ridho Allah SWT. Kami Bermaksud
+        menyelenggarakan Resepsi Pernikahan putra-putri kami, yang insya allah
+        akan dilaksanakan pada :
+      </p>
+    </div>
+    <div class="max-w-screen-lg mx-auto p-4">
+      <div
+        class="grid md:grid-cols-2 gap-4"
+        x-data="{ show: false}"
+        x-intersect.threshold.50="show = true"
+        x-intersect:leave.margin.0%="show = false"
+      >
+        <div
+          class="z-0 bg-purple-300 relative h-max text-center p-4 rounded-lg shadow-xl"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1600 delay-300' : 'opacity-0 -translate-x-500'"
+        >
+          <img
+            class="absolute -z-10 bottom-0 -left-10 opacity-50"
+            src="img/assets/7.png"
+            alt=""
+          />
+          <h3
+            class="font-[ephesis] text-3xl md:text-4xl lg:text-5xl"
+            x-cloak
+            x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1700 delay-350' : 'opacity-0 -translate-x-500'"
+          >
+            Akad Nikah
+          </h3>
+          <hr class="my-4" />
+          <p
+            class="font-bold text-3xl mt-4"
+            x-cloak
+            x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 -translate-x-500'"
+          >
+            Jum'at
+          </p>
+          <p
+            class="font-bold text-5xl lg:text-7xl my-2"
+            x-cloak
+            x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 -translate-x-500'"
+          >
+            11
+          </p>
+          <p
+            class="font-bold text-3xl"
+            x-cloak
+            x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 -translate-x-500'"
+          >
+            April 2025
+          </p>
+          <p
+            class="mt-4 text-base lg:text-xl"
+            x-cloak
+            x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 -translate-x-500'"
+          >
+            14:00 WIB ~ Selesai
+          </p>
+          <hr class="my-4" />
+          <p
+            class="text-base lg:text-xl"
+            x-cloak
+            x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 -translate-x-500'"
+          >
+            Di Kediaman Mempelai Wanita
+          </p>
+          <p
+            class="text-base lg:text-xl"
+            x-cloak
+            x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 -translate-x-500'"
+          >
+            Kota Manna, Kab. Bengkulu Selatan
+          </p>
+        </div>
+        <div
+          class="z-0 bg-purple-300 relative h-max text-center p-4 rounded-lg shadow-xl"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1600 delay-300' : 'opacity-0 translate-x-500'"
+        >
+          <img
+            class="absolute -z-10 top-0 -right-10 opacity-50"
+            src="img/assets/6.png"
+            alt=""
+          />
+          <h3
+            class="font-[ephesis] text-3xl md:text-4xl lg:text-5xl"
+            x-cloak
+            x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1700 delay-350' : 'opacity-0 translate-x-500'"
+          >
+            Ngunduh Mantu
+          </h3>
+          <hr class="my-4" />
+          <p
+            class="font-bold text-3xl mt-4"
+            x-cloak
+            x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 translate-x-500'"
+          >
+            Sabtu
+          </p>
+          <p
+            class="font-bold text-5xl lg:text-7xl my-2"
+            x-cloak
+            x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 translate-x-500'"
+          >
+            18
+          </p>
+          <p
+            class="font-bold text-3xl"
+            x-cloak
+            x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 translate-x-500'"
+          >
+            April 2025
+          </p>
+          <p
+            class="mt-4 text-base lg:text-xl"
+            x-cloak
+            x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 translate-x-500'"
+          >
+            19:30 WIB ~ Selesai
+          </p>
+          <hr class="my-4" />
+          <p
+            class="text-base lg:text-xl"
+            x-cloak
+            x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 translate-x-500'"
+          >
+            Di Kediaman Mempelai Pria
+          </p>
+          <p
+            class="text-base lg:text-xl"
+            x-cloak
+            x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 translate-x-500'"
+          >
+            Perbatasan desa Sungai Sikai dan Tangkil
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w-full bg-purple-300 text-center p-8 mt-20">
+      <div
+        class="w-md mx-auto relative"
+        x-data="{ show: false}"
+        x-intersect.threshold.50="show = true"
+        x-intersect:leave.margin.0%="show = false"
+      >
+        <h2
+          class="font-[ephesis] text-4xl lg:text-5xl"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1500 delay-200' : 'opacity-0 translate-x-500'"
+        >
+          Lokasi Acara
+        </h2>
+        <img
+          class="-top-15 left-8 w-36 absolute -rotate-30"
+          src="img/assets/14.png"
+          alt=""
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1500 delay-200' : 'opacity-0 -translate-x-500'"
+        />
+      </div>
+    </div>
+    <div
+      class="w-full h-screen absolute -z-10 bg-[url(img/assets/16.png)] overflow-x-hidden bg-contain bg-no-repeat opacity-50"
+    ></div>
+    <div class="max-w-screen-xl mx-auto mt-6 p-4">
+      <div class="text-center">
+        <h3 class="font-bold">Kediaman Mempelai Pria :</h3>
+        <p class="max-w-screen-md mx-auto mb-4 text-base lg:text-xl">
+          Dusun Batu Rejo, Desa Sungai Sikai, RT 05, Kec. Gunung Tujuh, Kab.
+          Kerinci, Prov Jambi.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7975.930331167706!2d101.31426528116805!3d-1.7463598013997428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2cffb9c69329ab%3A0xe775f7b43fbf04fb!2sBatuRejo%20sungai%20sukai!5e0!3m2!1sen!2sid!4v1741428813965!5m2!1sen!2sid"
+          class="w-full h-96 rounded-lg"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="text-center mt-6">
+        <h3 class="font-bold">Kediaman Mempelai Wanita :</h3>
+        <p class="max-w-screen-md mx-auto mb-4 text-base lg:text-xl">
+          Jl. Puyung Sakti No. 69, RT 02, Kel. Kota Medan, Kec. Kota Manna, Kab.
+          Bengkulu Selatan, Prov. Bengkulu.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15911.15670302327!2d102.89557056480486!3d-4.4502828852954375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e37af00191713d3%3A0x60877b8457d7f936!2sManna%2C%20bengkulu%20selatan!5e0!3m2!1sen!2sid!4v1741429109988!5m2!1sen!2sid"
+          class="w-full h-96 rounded-lg"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <div class="w-full bg-purple-300 text-center p-8 mt-20">
+      <div
+        class="w-sm mx-auto relative"
+        x-data="{ show: false}"
+        x-intersect.threshold.50="show = true"
+        x-intersect:leave.margin.0%="show = false"
+      >
+        <img
+          class="-top-15 right-15 w-36 absolute rotate-85"
+          src="img/assets/14.png"
+          alt=""
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1500 delay-200' : 'opacity-0 translate-x-500'"
+        />
+        <h2
+          class="font-[ephesis] text-4xl lg:text-5xl"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1500 delay-200' : 'opacity-0 -translate-x-500'"
+        >
+          Gallery
+        </h2>
+      </div>
+    </div>
+    <!-- <div class="w-full relative"> -->
+    <div
+      class="w-full h-full absolute -z-10 bg-[url(img/assets/6.png)] -right-10 lg:-right-100 overflow-x-hidden bg-contain bg-no-repeat opacity-50"
+    ></div>
+    <!-- </div> -->
+    <div class="max-w-screen-xl mx-auto mt-6 p-4">
+      <div
+        class="grid grid-cols-3 gap-4"
+        x-data="{ show: false}"
+        x-intersect="show = true"
+        x-intersect:leave.margin.0%="show = false"
+      >
+        <img
+          src="img/WA0000.jpg"
+          alt=""
+          class="object-cover"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1900 delay-200' : 'opacity-0 translate-x-500'"
+        />
+        <img
+          src="img/WA0001.jpg"
+          alt=""
+          class="object-cover"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2000 delay-250' : 'opacity-0 translate-x-500'"
+        />
+        <img
+          src="img/WA0002.jpg"
+          alt=""
+          class="object-cover"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2100 delay-300' : 'opacity-0 translate-x-500'"
+        />
+        <img
+          src="img/WA0011.jpg"
+          alt=""
+          class="object-cover"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2200 delay-200' : 'opacity-0 translate-x-500'"
+        />
+        <img
+          src="img/WA0012.jpg"
+          alt=""
+          class="object-cover"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2300 delay-200' : 'opacity-0 translate-x-500'"
+        />
+        <img
+          src="img/WA0013.jpg"
+          alt=""
+          class="object-cover"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2400 delay-200' : 'opacity-0 translate-x-500'"
+        />
+        <img
+          src="img/WA0021.jpg"
+          alt=""
+          class="object-cover"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2500 delay-200' : 'opacity-0 translate-x-500'"
+        />
+        <img
+          src="img/WA0028.jpg"
+          alt=""
+          class="object-cover"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2600 delay-200' : 'opacity-0 translate-x-500'"
+        />
+        <img
+          src="img/WA0030.jpg"
+          alt=""
+          class="object-cover"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2700 delay-200' : 'opacity-0 translate-x-500'"
+        />
+      </div>
+      <div
+        class="text-center mt-6"
+        x-data="{ show: false}"
+        x-intersect="show = true"
+        x-intersect:leave.margin.0%="show = false"
+      >
+        <p
+          class="text-base lg:text-xl"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1900 delay-100' : 'opacity-0 translate-x-500'"
+        >
+          Hormat Kami Yang Berbahagia
+        </p>
+        <p
+          class="font-[ephesis] text-5xl mt-4"
+          x-cloak
+          x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1900 delay-100' : 'opacity-0 -translate-x-500'"
+        >
+          dr. Angga & dr. Laras
+        </p>
+        <img class="justify-self-center w-64" src="img/assets/8.png" alt="" />
+      </div>
+    </div>
+    <div
+      class="w-full text-center p-8 mt-0"
+      x-data="{ show: false}"
+      x-intersect="show = true"
+      x-intersect:leave.margin.0%="show = false"
+    >
+      <h2
+        class="font-[ephesis] text-5xl"
+        x-cloak
+        x-bind:class="show ? 'opacity-100 translate-y-0 transition duration-1900 delay-100' : 'opacity-0 translate-y-500'"
+      >
+        Happy Wedding!
+      </h2>
+    </div>
+  </body>
+</html>
