@@ -503,51 +503,6 @@
             Happy Wedding!
         </h2>
     </div>
-    <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function () {
-            const myAudio = document.getElementById('music');
-            const audioControl = document.getElementById('audioControl');
-            const playIcon = document.getElementById('playIcon');
-            const pauseIcon = document.getElementById('pauseIcon');
-            const coverContainer = document.getElementById('coverContainer');
-            const openInvitationBtn = document.getElementById('openInvitation');
-
-            // Fungsi untuk kontrol audio
-            audioControl.addEventListener('click', function () {
-                if (myAudio.paused) {
-                    myAudio.play()
-                        .then(() => {
-                            playIcon.classList.add('hidden');
-                            pauseIcon.classList.remove('hidden');
-                        })
-                        .catch(error => {
-                            console.error('Gagal memutar audio:', error);
-                        });
-                } else {
-                    myAudio.pause();
-                    playIcon.classList.remove('hidden');
-                    pauseIcon.classList.add('hidden');
-                }
-            });
-
-            // Tombol buka undangan
-            openInvitationBtn.addEventListener('click', function () {
-                coverContainer.classList.add('hidden');
-                document.body.classList.remove('no-scroll');
-                audioControl.classList.remove('hidden');
-
-                // Putar musik setelah interaksi pengguna
-                myAudio.play()
-                    .then(() => {
-                        playIcon.classList.add('hidden');
-                        pauseIcon.classList.remove('hidden');
-                    })
-                    .catch(error => {
-                        console.error('Gagal memutar audio:', error);
-                    });
-            });
-        });
-    </script>
 </body>
 
 </html>
