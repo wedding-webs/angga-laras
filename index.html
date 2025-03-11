@@ -4,6 +4,39 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="wedding website, angga and laras," />
+    <meta name="description" content="the wedding of dr. angga and dr. laras" />
+    <meta name="url" content="https://wedding-webs.github.io/angga-laras/" />
+    <meta name="identifier-URL" content="https://wedding-webs.github.io/angga-laras/" />
+    <meta name="language" content="IDN" />
+    <meta name="robots" content="index,follow" />
+    <meta http-equiv="Cache-Control" content="no cache" />
+    <meta http-equiv="x-dns-prefetch-control" content="off" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="googlebot-news" content="noindex" />
+    <link rel="canonical" href="https://wedding-webs.github.io/angga-laras/" />
+    <!-- open graph -->
+    <meta name="og:title" content="dr. Angga and dr. Laras" />
+    <meta name="og:type" content="wedding website" />
+    <meta name="og:url" content="https://wedding-webs.github.io/angga-laras" />
+    <meta name="og:image" content="http://wedding-webs.github.io/angga-laras/img/WA0002.jpg" />
+    <meta name="og:site_name" content="dr. angga and dr. laras" />
+    <meta name="og:description" content="the wedding of dr. angga and dr.laras" />
+    <!-- apple meta tags -->
+    <meta name="apple-mobile-web-app-title" content="Wedding Angga & Laras" />
+    <!-- New in iOS6 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" type="image/png" />
+    <link href="touch-icon-ipad.png" rel="apple-touch-icon" sizes="72x72" />
+    <link href="touch-icon-iphone4.png" rel="apple-touch-icon" sizes="114x114" />
+    <link href="/startup.png" rel="apple-touch-startup-image" />
+    <link href="http://github.com/images/touch-icon-iphone4.png" sizes="114x114" rel="apple-touch-icon-precomposed" />
+    <link href="http://github.com/images/touch-icon-ipad.png" sizes="72x72" rel="apple-touch-icon-precomposed" />
+    <link href="http://github.com/images/apple-touch-icon-57x57.png" sizes="57x57" rel="apple-touch-icon-precomposed" />
     <link rel="stylesheet" href="src/output.css" />
     <title>Angga Laras</title>
     <link
@@ -17,38 +50,6 @@
     <audio id="music" loop>
         <source src="audio/celline-dion-because-you-loved-me.mp3" type="audio/mpeg">
     </audio>
-    <!-- <div id="coverContainer" class="cover-container">
-        <div class="text-center mb-8">
-            <p class="font-normal text-light-100 px-4 text-white text-sm md:text-base mb-2">
-                The Wedding Of
-            </p>
-            <h1 class="text-white font-[ephesis] my-4 text-4xl sm:text-5xl md:text-6xl xl:text-8xl">
-                dr.Angga & dr.Laras
-            </h1>
-            <p class="text-white text-sm md:text-base">11.04.2025</p>
-        </div>
-        <img src="img/WA0033.jpg" alt="Cover Image"
-            class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover object-center mb-6" />
-        <button id="openInvitation"
-            class="mt-6 bg-rose-200 hover:bg-rose-300 text-gray-800 font-semibold py-2 px-6 rounded-full shadow-lg transform transition-transform hover:scale-105">
-            Buka Undangan
-        </button>
-    </div>
-
-    <button id="audioControl" class="fixed bottom-4 right-4 bg-rose-200 p-3 rounded-full shadow-lg z-50 hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" id="playIcon" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" id="pauseIcon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-    </button> -->
     <header class="z-10" x-data="{ show: false, click: true }" x-cloak x-intersect="show = true"
         x-intersect:leave.margin.20%="show = false">
         <div class="relative h-svh w-full">
@@ -146,7 +147,7 @@
                 x-bind:class="show ? 'opacity-100 translate-y-0 transition duration-1000 delay-100' : 'opacity-0 translate-y-500'" />
             <div class="absolute place-content-center text-center p-4 bg-rose-200/90 w-xs md:w-xl lg:w-3xl -bottom-1/2 md:-bottom-1/4 lg:-bottom-1/3 xl:-bottom-1/5 left-1/2 -translate-x-1/2 shadow-lg"
                 x-cloak
-                x-bind:class="show ? 'opacity-100 translate-y-0 transition duration-1500 delay-500' : 'opacity-0 translate-y-500'">
+                x-bind:class="show ? 'opacity-100 translate-y-0 transition duration-1500 delay-100' : 'opacity-0 translate-y-500'">
                 <img class="absolute w-128 rotate-55 left-0 -z-10 opacity-50" src="img/assets/7.png" alt="" />
                 <img class="absolute w-128 rotate-55 right-0 bottom-0 -z-10 opacity-50" src="img/assets/6.png" alt="" />
                 <h1 class="font-[ephesis] text-3xl md:text-4xl lg:text-5xl">
@@ -189,70 +190,70 @@
         <div class="grid md:grid-cols-2 gap-4" x-data="{ show: false}" x-intersect.threshold.0="show = true"
             x-intersect:leave.margin.50%="show = false">
             <div class="z-0 bg-rose-200 relative h-max text-center p-4 rounded-lg shadow-xl" x-cloak
-                x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1600 delay-300' : 'opacity-0 -translate-x-500'">
+                x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1600 delay-100' : 'opacity-0 -translate-x-500'">
                 <img class="absolute -z-10 bottom-0 -left-10 opacity-50" src="img/assets/7.png" alt="" />
                 <h3 class="font-[ephesis] text-3xl md:text-4xl lg:text-5xl" x-cloak
-                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1700 delay-350' : 'opacity-0 -translate-x-500'">
+                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1700 delay-150' : 'opacity-0 -translate-x-500'">
                     Akad Nikah
                 </h3>
                 <hr class="my-4" />
                 <p class="font-bold text-xl md:text-2xl lg:text-3xl mt-4" x-cloak
-                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 -translate-x-500'">
+                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-200' : 'opacity-0 -translate-x-500'">
                     Jum'at
                 </p>
                 <p class="font-bold text-4xl md:text-6xl lg:text-7xl my-2" x-cloak
-                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 -translate-x-500'">
+                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-200' : 'opacity-0 -translate-x-500'">
                     11
                 </p>
                 <p class="font-bold text-xl md:text-2xl lg:text-3xl" x-cloak
-                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 -translate-x-500'">
+                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-200' : 'opacity-0 -translate-x-500'">
                     April 2025
                 </p>
                 <p class="mt-4 text-base" x-cloak
-                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 -translate-x-500'">
+                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-200' : 'opacity-0 -translate-x-500'">
                     14:00 WIB ~ Selesai
                 </p>
                 <hr class="my-4" />
                 <p class="text-sm md:text-base" x-cloak
-                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 -translate-x-500'">
+                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-200' : 'opacity-0 -translate-x-500'">
                     Di Kediaman Mempelai Wanita
                 </p>
                 <p class="text-sm md:text-base" x-cloak
-                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 -translate-x-500'">
+                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-200' : 'opacity-0 -translate-x-500'">
                     Kota Manna, Kab. Bengkulu Selatan
                 </p>
             </div>
             <div class="z-0 bg-rose-200 relative h-max text-center p-4 rounded-lg shadow-xl" x-cloak
-                x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1600 delay-300' : 'opacity-0 translate-x-500'">
+                x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1600 delay-100' : 'opacity-0 translate-x-500'">
                 <img class="absolute -z-10 top-0 -right-10 opacity-50" src="img/assets/6.png" alt="" />
                 <h3 class="font-[ephesis] text-3xl md:text-4xl lg:text-5xl" x-cloak
-                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1700 delay-350' : 'opacity-0 translate-x-500'">
+                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1700 delay-150' : 'opacity-0 translate-x-500'">
                     Ngunduh Mantu
                 </h3>
                 <hr class="my-4" />
                 <p class="font-bold text-xl md:text-2xl lg:text-3xl mt-4" x-cloak
-                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 translate-x-500'">
+                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-200' : 'opacity-0 translate-x-500'">
                     Sabtu
                 </p>
                 <p class="font-bold text-4xl md:text-6xl lg:text-7xl my-2" x-cloak
-                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 translate-x-500'">
+                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-200' : 'opacity-0 translate-x-500'">
                     18
                 </p>
                 <p class="font-bold text-xl md:text-2xl lg:text-3xl" x-cloak
-                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 translate-x-500'">
+                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-200' : 'opacity-0 translate-x-500'">
                     April 2025
                 </p>
                 <p class="mt-4 text-base" x-cloak
-                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 translate-x-500'">
+                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-200' : 'opacity-0 translate-x-500'">
                     19:30 WIB ~ Selesai
                 </p>
                 <hr class="my-4" />
                 <p class="text-sm md:text-base" x-cloak
-                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 translate-x-500'">
+                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-200' : 'opacity-0 translate-x-500'">
                     Di Kediaman Mempelai Pria
                 </p>
                 <p class="text-sm md:text-base" x-cloak
-                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-400' : 'opacity-0 translate-x-500'">
+                    x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-1800 delay-200' : 'opacity-0 translate-x-500'">
                     Perbatasan desa Sungai Sikai dan Tangkil
                 </p>
             </div>
@@ -472,15 +473,15 @@
             <img src="img/WA0011.jpg" alt="" class="object-cover" x-cloak
                 x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2200 delay-200' : 'opacity-0 translate-x-500'" />
             <img src="img/WA0012.jpg" alt="" class="object-cover" x-cloak
-                x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2300 delay-200' : 'opacity-0 translate-x-500'" />
+                x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2300 delay-250' : 'opacity-0 translate-x-500'" />
             <img src="img/WA0013.jpg" alt="" class="object-cover" x-cloak
-                x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2400 delay-200' : 'opacity-0 translate-x-500'" />
+                x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2400 delay-300' : 'opacity-0 translate-x-500'" />
             <img src="img/WA0021.jpg" alt="" class="object-cover" x-cloak
                 x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2500 delay-200' : 'opacity-0 translate-x-500'" />
             <img src="img/WA0028.jpg" alt="" class="object-cover" x-cloak
-                x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2600 delay-200' : 'opacity-0 translate-x-500'" />
+                x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2600 delay-250' : 'opacity-0 translate-x-500'" />
             <img src="img/WA0030.jpg" alt="" class="object-cover" x-cloak
-                x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2700 delay-200' : 'opacity-0 translate-x-500'" />
+                x-bind:class="show ? 'opacity-100 translate-x-0 transition duration-2700 delay-300' : 'opacity-0 translate-x-500'" />
         </div>
         <div class="text-center mt-6" x-data="{ show: false}" x-intersect="show = true"
             x-intersect:leave.margin.30%="show = false">
