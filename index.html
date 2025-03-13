@@ -53,10 +53,11 @@
 
 <body class="antialiased font-[lora] overflow-x-hidden touch-pan-y">
     <audio id="music" loop>
-        <source src="audio/celline-dion-because-you-loved-me.mp3" type="audio/mpeg">
+        <source src="audio/Jaz - Bersamamu (Official Lyric Video) - JAZ.mp3" type="audio/mpeg">
     </audio>
     <!-- Floating Music Control Button -->
-    <div id="musicControl" class="fixed bottom-6 right-6 z-50 bg-rose-200 shadow-lg rounded-full p-3 cursor-pointer">
+    <div id="musicControl"
+        class="fixed bottom-5 right-5 z-40 bg-rose-500 text-white shadow-lg rounded-full p-3 cursor-pointer">
         <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -70,8 +71,8 @@
                 d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
     </div>
-    <header class="z-10" x-data="{ show: false }" x-intersect:enter="show = true">
-        <div class="relative h-svh w-full">
+    <header class="z-50" x-data="{ show: false }" x-intersect:enter="show = true">
+        <div class="relative h-svh w-full z-50">
             <img src="img/WA0033.jpg" alt="" x-cloak x-show="show" class="object-cover object-center w-full h-full"
                 x-transition:enter="transition-all ease-in-out duration-1200 delay-100"
                 x-transition:enter-start="opacity-0 -translate-y-50"
@@ -79,7 +80,7 @@
             <div class="absolute inset-0 bg-black/50" x-cloak x-show="show"
                 x-transition:enter="transition-all ease-in-out duration-1500 delay-150"
                 x-transition:enter-start="opacity-0" x-transition:enter-end="opacty-50"></div>
-            <div class="absolute inset-0 flex items-center justify-center top-50 max-w-screen-xl mx-auto">
+            <div class="absolute inset-0 flex items-center justify-center top-20 max-w-screen-xl mx-auto">
                 <div class="text-center" x-cloak x-show="show"
                     x-transition:enter="transition-all ease-in-out duration-1500 delay-150"
                     x-transition:enter-start="opacity-0 translate-y-50"
@@ -91,10 +92,21 @@
                         dr.Angga & dr.Laras
                     </h1>
                     <p class="text-white text-sm md:text-base">11.04.2025</p>
-                    <div class="mt-10">
-                        <a href="#first" target="_self"
-                            class="text-sm bg-white text-black py-2 px-6 rounded-full cursor-pointer">buka
-                            undangan</a>
+                    <div class="mt-30 w-50 justify-self-center">
+                        <p class="text-white text-sm">Kepada Bapak/Ibu/Saudara/i</p>
+                        <div class="border border-white p-4 mt-4 rounded-lg ">
+                            <p class="text-white font-bold" id="guess_name">Ziqfa & calon istri</p>
+                        </div>
+                    </div>
+                    <div
+                        class="mt-6 inline-flex items-center gap-2 justify-center bg-rose-500 text-white py-2 px-6 rounded-full cursor-pointer font-bold hover:bg-rose-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-5 -mt-0.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                        </svg>
+                        <a href="#first" target="_self" class="text-sm">Buka
+                            Undangan</a>
                     </div>
                 </div>
             </div>
@@ -152,9 +164,10 @@
             <img class="opacity-50" src="img/assets/7.png" alt="" />
         </div>
     </div>
-    <div class="max-w-screen-md mx-auto text-center p-4 z-20" x-data="{ show: false}" x-intersect:enter="show = true">
+    <div class="max-w-screen-md mx-auto text-center p-4 z-20" x-data="{ show: false}"
+        x-intersect:enter.threshold.50="show = true">
         <p class="text-sm md:text-base" x-cloak x-show="show"
-            x-transition:enter.threshold.50="transition-all duration-1100 delay-110"
+            x-transition:enter="transition-all duration-1100 delay-110"
             x-transition:enter-start="opacity-0 translate-y-50" x-transition:enter-end="opacity-100 translate-y-0">
             Maha suci Allah yang telah menciptakan mahluk-Nya berpasang-pasangan. Ya
             Allah, perkenalkanlah kami merangkaikan kasih sayang yang kau ciptakan
@@ -188,12 +201,82 @@
                 <h1 class="font-[ephesis] text-3xl md:text-4xl lg:text-5xl">
                     dr. Angga Setiawan, M.K.M.
                 </h1>
+                <div class="flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 48 48">
+                        <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#fd5"></stop>
+                            <stop offset=".328" stop-color="#ff543f"></stop>
+                            <stop offset=".348" stop-color="#fc5245"></stop>
+                            <stop offset=".504" stop-color="#e64771"></stop>
+                            <stop offset=".643" stop-color="#d53e91"></stop>
+                            <stop offset=".761" stop-color="#cc39a4"></stop>
+                            <stop offset=".841" stop-color="#c837ab"></stop>
+                        </radialGradient>
+                        <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
+                            d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                        </path>
+                        <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813"
+                            gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#4168c9"></stop>
+                            <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+                        </radialGradient>
+                        <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
+                            d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                        </path>
+                        <path fill="#fff"
+                            d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
+                        </path>
+                        <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+                        <path fill="#fff"
+                            d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
+                        </path>
+                    </svg>
+                    <a target="_blank"
+                        href="https://www.instagram.com/a.s_angga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        class="ml-1 text-sm md:text-base">a.s_angga</a>
+                </div>
                 <p class="mt-2 lg:mt-4 text-sm md:text-base">Putra Pertama Dari :</p>
                 <p class="font-bold text-sm md:text-base">Bpk. Syawal & Ibu Santi</p>
                 <p class="font-[ephesis] text-3xl lg:text-5xl my-2 md:my-4">&</p>
                 <h1 class="font-[ephesis] text-3xl md:text-4xl lg:text-5xl">
                     dr. Laras Kusumaningtyas
                 </h1>
+                <div class="flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 48 48">
+                        <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#fd5"></stop>
+                            <stop offset=".328" stop-color="#ff543f"></stop>
+                            <stop offset=".348" stop-color="#fc5245"></stop>
+                            <stop offset=".504" stop-color="#e64771"></stop>
+                            <stop offset=".643" stop-color="#d53e91"></stop>
+                            <stop offset=".761" stop-color="#cc39a4"></stop>
+                            <stop offset=".841" stop-color="#c837ab"></stop>
+                        </radialGradient>
+                        <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
+                            d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                        </path>
+                        <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813"
+                            gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#4168c9"></stop>
+                            <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+                        </radialGradient>
+                        <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
+                            d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                        </path>
+                        <path fill="#fff"
+                            d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
+                        </path>
+                        <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+                        <path fill="#fff"
+                            d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
+                        </path>
+                    </svg>
+                    <a target="_blank"
+                        href="https://www.instagram.com/laraskusumaningtyas_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        class="ml-1 text-sm md:text-base">laraskusumaningtyas_</a>
+                </div>
                 <p class="mt-2 lg:mt-4 text-sm md:text-base">Putri Pertama Dari :</p>
                 <p class="font-bold text-sm md:text-base">
                     Bpk. Supawit, M. Pd. & Ibu Hanita Suryani, S. Pd.
@@ -201,9 +284,9 @@
             </div>
         </div>
     </div>
-    <div class="w-full bg-rose-200 p-6 mt-60 md:mt-50">
+    <div class="w-full bg-rose-200 p-6 mt-60 md:mt-60">
         <div class="w-3xs md:w-xs relative text-center mx-auto z-10" x-data="{ show: false}"
-            x-intersect:enter="show = true">
+            x-intersect:enter.threshold.50="show = true">
             <h2 class="font-[ephesis] text-3xl md:text-4xl lg:text-5xl" x-cloak x-show="show"
                 x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
                 x-transition:enter-start="opacity-0 translate-x-50" x-transition:enter-end="opacity-100 translate-x-0">
@@ -223,10 +306,11 @@
             akan dilaksanakan pada :
         </p>
     </div>
-    <div class="max-w-screen-lg mx-auto p-4">
-        <div class="grid md:grid-cols-2 gap-4" x-data="{ show: false}" x-intersect:enter="show = true">
-            <div class="z-0 bg-rose-200 relative h-max text-center p-4 rounded-lg shadow-xl" x-cloak x-show="show"
-                x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
+    <div class="max-w-screen-xl mx-auto p-4">
+        <div class="flex flex-col lg:flex-row justify-center gap-4 h-full" x-data="{ show: false}"
+            x-intersect:enter.threshold.30="show = true">
+            <div class="basis-full sm:basis-1/2 z-0 bg-rose-200 relative min-h-full text-center p-4 rounded-lg shadow-xl"
+                x-cloak x-show="show" x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
                 x-transition:enter-start="opacity-0 -translate-x-100"
                 x-transition:enter-end="opacity-100 translate-x-0">
                 <img class="absolute -z-10 bottom-0 -left-10 opacity-50" src="img/assets/7.png" alt="" />
@@ -237,19 +321,19 @@
                     Akad Nikah
                 </h3>
                 <hr class="my-4" />
-                <p class="font-bold text-xl md:text-2xl lg:text-3xl mt-4" x-cloak x-show="show"
+                <p class="font-bold text-xl md:text-2xl mt-4" x-cloak x-show="show"
                     x-transition:enter="transition-all ease-in-out duration-1200 delay-120"
                     x-transition:enter-start="opacity-0 -translate-x-120"
                     x-transition:enter-end="opacity-100 translate-x-0">
                     Jum'at
                 </p>
-                <p class="font-bold text-4xl md:text-6xl lg:text-7xl my-2" x-cloak x-show="show"
+                <p class="font-bold text-3xl md:text-4xl my-2" x-cloak x-show="show"
                     x-transition:enter="transition-all ease-in-out duration-1300 delay-130"
                     x-transition:enter-start="opacity-0 -translate-x-130"
                     x-transition:enter-end="opacity-100 translate-x-0">
                     11
                 </p>
-                <p class="font-bold text-xl md:text-2xl lg:text-3xl" x-cloak x-show="show"
+                <p class="font-bold text-xl md:text-2xl" x-cloak x-show="show"
                     x-transition:enter="transition-all ease-in-out duration-1400 delay-140"
                     x-transition:enter-start="opacity-0 -translate-x-140"
                     x-transition:enter-end="opacity-100 translate-x-0">
@@ -274,9 +358,85 @@
                     x-transition:enter-end="opacity-100 translate-x-0">
                     Kota Manna, Kab. Bengkulu Selatan
                 </p>
+                <div x-cloak x-show="show" x-transition:enter="transition-all ease-in-out duration-1600 delay-160"
+                    x-transition:enter-start="opacity-0 -translate-x-160"
+                    x-transition:enter-end="opacity-100 translate-x-0"
+                    class="mt-4 inline-flex bg-rose-600 rounded-full py-2 px-6 justify-center items-center text-white hover:bg-rose-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                    <a class="ml-2" href="https://maps.app.goo.gl/1ScsoSbhMjCEzb3J8" target="_blank">Kunjungi Lokasi</a>
+                </div>
             </div>
-            <div class="z-0 bg-rose-200 relative h-max text-center p-4 rounded-lg shadow-xl" x-cloak x-show="show"
-                x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
+            <div class="basis-full sm:basis-1/2 z-0 bg-rose-200 relative min-h-full text-center p-4 rounded-lg shadow-xl"
+                x-cloak x-show="show" x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
+                x-transition:enter-start="opacity-0 -translate-x-100"
+                x-transition:enter-end="opacity-100 translate-x-0">
+                <img class="absolute -z-10 bottom-0 -left-10 opacity-50" src="img/assets/7.png" alt="" />
+                <h3 class="font-[ephesis] text-3xl md:text-4xl lg:text-5xl" x-cloak x-show="show"
+                    x-transition:enter="transition-all ease-in-out duration-1100 delay-110"
+                    x-transition:enter-start="opacity-0 -translate-x-110"
+                    x-transition:enter-end="opacity-100 translate-x-0">
+                    Resepsi
+                </h3>
+                <hr class="my-4" />
+                <p class="font-bold text-xl md:text-2xl mt-4" x-cloak x-show="show"
+                    x-transition:enter="transition-all ease-in-out duration-1200 delay-120"
+                    x-transition:enter-start="opacity-0 -translate-x-120"
+                    x-transition:enter-end="opacity-100 translate-x-0">
+                    Sabtu ~ Minggu
+                </p>
+                <p class="font-bold text-3xl md:text-4xl my-2" x-cloak x-show="show"
+                    x-transition:enter="transition-all ease-in-out duration-1300 delay-130"
+                    x-transition:enter-start="opacity-0 -translate-x-130"
+                    x-transition:enter-end="opacity-100 translate-x-0">
+                    12 ~ 13
+                </p>
+                <p class="font-bold text-xl md:text-2xl" x-cloak x-show="show"
+                    x-transition:enter="transition-all ease-in-out duration-1400 delay-140"
+                    x-transition:enter-start="opacity-0 -translate-x-140"
+                    x-transition:enter-end="opacity-100 translate-x-0">
+                    April 2025
+                </p>
+                <p class="mt-4 text-base" x-cloak x-show="show"
+                    x-transition:enter="transition-all ease-in-out duration-1500 delay-150"
+                    x-transition:enter-start="opacity-0 -translate-x-150"
+                    x-transition:enter-end="opacity-100 translate-x-0">
+                    08:00 WIB ~ Selesai
+                </p>
+                <hr class="my-4" />
+                <p class="text-sm md:text-base" x-cloak x-show="show"
+                    x-transition:enter="transition-all ease-in-out duration-1600 delay-160"
+                    x-transition:enter-start="opacity-0 -translate-x-160"
+                    x-transition:enter-end="opacity-100 translate-x-0">
+                    Di Kediaman Mempelai Wanita
+                </p>
+                <p class="text-sm md:text-base" x-cloak x-show="show"
+                    x-transition:enter="transition-all ease-in-out duration-1600 delay-160"
+                    x-transition:enter-start="opacity-0 -translate-x-160"
+                    x-transition:enter-end="opacity-100 translate-x-0">
+                    Kota Manna, Kab. Bengkulu Selatan
+                </p>
+                <div x-cloak x-show="show" x-transition:enter="transition-all ease-in-out duration-1600 delay-160"
+                    x-transition:enter-start="opacity-0 -translate-x-160"
+                    x-transition:enter-end="opacity-100 translate-x-0"
+                    class="mt-4 inline-flex bg-rose-600 rounded-full py-2 px-6 justify-center items-center text-white hover:bg-rose-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                    <a class="ml-2" href="https://maps.app.goo.gl/1ScsoSbhMjCEzb3J8" target="_blank">Kunjungi Lokasi</a>
+                </div>
+            </div>
+            <div class="basis-full sm:basis-1/2 z-0 bg-rose-200 relative min-h-full text-center p-4 rounded-lg shadow-xl"
+                x-cloak x-show="show" x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
                 x-transition:enter-start="opacity-0 translate-x-100" x-transition:enter-end="opacity-100 translate-x-0">
                 <img class="absolute -z-10 top-0 -right-10 opacity-50" src="img/assets/6.png" alt="" />
                 <h3 class="font-[ephesis] text-3xl md:text-4xl lg:text-5xl" x-cloak x-show="show"
@@ -286,19 +446,19 @@
                     Ngunduh Mantu
                 </h3>
                 <hr class="my-4" />
-                <p class="font-bold text-xl md:text-2xl lg:text-3xl mt-4" x-cloak x-show="show"
+                <p class="font-bold text-xl md:text-2xl mt-4" x-cloak x-show="show"
                     x-transition:enter="transition-all ease-in-out duration-1200 delay-120"
                     x-transition:enter-start="opacity-0 translate-x-120"
                     x-transition:enter-end="opacity-100 translate-x-0">
-                    Sabtu
+                    Sabtu ~ Minggu
                 </p>
-                <p class="font-bold text-4xl md:text-6xl lg:text-7xl my-2" x-cloak x-show="show"
+                <p class="font-bold text-3xl md:text-4xl my-2" x-cloak x-show="show"
                     x-transition:enter="transition-all ease-in-out duration-1300 delay-130"
                     x-transition:enter-start="opacity-0 translate-x-130"
                     x-transition:enter-end="opacity-100 translate-x-0">
-                    18
+                    19 ~ 20
                 </p>
-                <p class="font-bold text-xl md:text-2xl lg:text-3xl" x-cloak x-show="show"
+                <p class="font-bold text-xl md:text-2xl" x-cloak x-show="show"
                     x-transition:enter="transition-all ease-in-out duration-1400 delay-140"
                     x-transition:enter-start="opacity-0 translate-x-140"
                     x-transition:enter-end="opacity-100 translate-x-0">
@@ -308,7 +468,7 @@
                     x-transition:enter="transition-all ease-in-out duration-1500 delay-150"
                     x-transition:enter-start="opacity-0 translate-x-150"
                     x-transition:enter-end="opacity-100 translate-x-0">
-                    19:30 WIB ~ Selesai
+                    13:00 WIB ~ Selesai
                 </p>
                 <hr class="my-4" />
                 <p class="text-sm md:text-base" x-cloak x-show="show"
@@ -323,6 +483,19 @@
                     x-transition:enter-end="opacity-100 translate-x-0">
                     Perbatasan desa Sungai Sikai dan Tangkil
                 </p>
+                <div x-cloak x-show="show" x-transition:enter="transition-all ease-in-out duration-1600 delay-160"
+                    x-transition:enter-start="opacity-0 translate-x-160"
+                    x-transition:enter-end="opacity-100 translate-x-0"
+                    class="mt-4 inline-flex bg-rose-600 rounded-full py-2 px-6 justify-center items-center text-white hover:bg-rose-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                    <a class="ml-2" href="https://maps.app.goo.gl/LNMEFtZxkb4PDA4u6" target="_blank">Kunjungi Lokasi</a>
+                </div>
             </div>
         </div>
     </div>
@@ -341,55 +514,7 @@
             kami.
         </p>
     </div>
-    <div class="w-full bg-rose-200 p-6 mt-10">
-        <div class="w-3xs md:w-2xs lg:w-xs relative text-center mx-auto z-10" x-data="{ show: false}"
-            x-intersect:enter="show = true">
-            <h2 class="font-[ephesis] text-3xl md:text-4xl lg:text-5xl" x-cloak x-show="show"
-                x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
-                x-transition:enter-start="opacity-0 translate-x-100" x-transition:enter-end="opacity-100 translate-x-0">
-                Lokasi Acara
-            </h2>
-            <img src="img/assets/14.png" alt="" class="absolute w-24 lg:w-30 lg:-top-15 -top-10 -z-10" x-cloak
-                x-show="show" x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
-                x-transition:enter-start="opacity-0 -translate-x-100"
-                x-transition:enter-end="opacity-100 translate-x-0">
-        </div>
-    </div>
-    <div class="relative w-full h-max -z-10">
-        <div class="absolute left-0 -top-25 sm:-top-50">
-            <img class="opacity-50" src="img/assets/7.png" alt="" />
-        </div>
-    </div>
-    <div class="max-w-screen-xl mx-auto mt-6 p-4">
-        <div class="text-center" x-data="{ show: false }" x-intersect:enter="show = true">
-            <div x-cloak x-show="show" x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
-                x-transition:enter-start="opacity-0 translate-y-50" x-transition:enter-end="opacity-100 translate-y-0">
-                <h3 class="font-bold">Kediaman Mempelai Pria :</h3>
-                <p class="max-w-screen-md mx-auto mb-4 text-base lg:text-xl">
-                    Dusun Batu Rejo, Desa Sungai Sikai, RT 05, Kec. Gunung Tujuh, Kab.
-                    Kerinci, Prov Jambi.
-                </p>
-            </div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7975.930331167706!2d101.31426528116805!3d-1.7463598013997428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2cffb9c69329ab%3A0xe775f7b43fbf04fb!2sBatuRejo%20sungai%20sukai!5e0!3m2!1sen!2sid!4v1741428813965!5m2!1sen!2sid"
-                class="w-full h-96 rounded-lg" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="text-center mt-6" x-data="{ show: false }" x-intersect:enter="show = true">
-            <div x-cloak x-show="show" x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
-                x-transition:enter-start="opacity-0 translate-y-50" x-transition:enter-end="opacity-100 translate-y-0">
-                <h3 class="font-bold">Kediaman Mempelai Wanita :</h3>
-                <p class="max-w-screen-md mx-auto mb-4 text-base lg:text-xl">
-                    Jl. Puyung Sakti No. 69, RT 02, Kel. Kota Medan, Kec. Kota Manna, Kab.
-                    Bengkulu Selatan, Prov. Bengkulu.
-                </p>
-            </div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15911.15670302327!2d102.89557056480486!3d-4.4502828852954375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e37af00191713d3%3A0x60877b8457d7f936!2sManna%2C%20bengkulu%20selatan!5e0!3m2!1sen!2sid!4v1741429109988!5m2!1sen!2sid"
-                class="w-full h-96 rounded-lg" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
+    <!-- GALLERY -->
     <div class="w-full bg-rose-200 p-6 mt-10">
         <div class="w-45 md:w-50 lg:w-55 relative text-center mx-auto z-10" x-data="{ show: false}"
             x-intersect:enter="show = true">
@@ -409,64 +534,329 @@
         </div>
     </div>
     <div class="max-w-screen-xl mx-auto mt-6 p-4">
-        <div class="grid grid-cols-3 gap-4" x-data="{ show: false}" x-intersect:enter="show = true">
-            <img src="img/WA0000.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
-                x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
-                x-transition:enter-start="opacity-0 translate-x-100"
-                x-transition:enter-end="opacity-100 translate-x-0" />
-            <img src="img/WA0001.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
-                x-transition:enter="transition-all ease-in-out duration-1100 delay-110"
-                x-transition:enter-start="opacity-0 translate-x-110"
-                x-transition:enter-end="opacity-100 translate-x-0" />
-            <img src="img/WA0002.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
-                x-transition:enter="transition-all ease-in-out duration-1200 delay-120"
-                x-transition:enter-start="opacity-0 translate-x-120"
-                x-transition:enter-end="opacity-100 translate-x-0" />
-            <img src="img/WA0011.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
-                x-transition:enter="transition-all ease-in-out duration-1300 delay-130"
-                x-transition:enter-start="opacity-0 translate-x-130"
-                x-transition:enter-end="opacity-100 translate-x-0" />
-            <img src="img/WA0012.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
-                x-transition:enter="transition-all ease-in-out duration-1400 delay-140"
-                x-transition:enter-start="opacity-0 translate-x-140"
-                x-transition:enter-end="opacity-100 translate-x-0" />
-            <img src="img/WA0013.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
-                x-transition:enter="transition-all ease-in-out duration-1500 delay-150"
-                x-transition:enter-start="opacity-0 translate-x-150"
-                x-transition:enter-end="opacity-100 translate-x-0" />
-            <img src="img/WA0021.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
-                x-transition:enter="transition-all ease-in-out duration-1600 delay-160"
-                x-transition:enter-start="opacity-0 translate-x-160"
-                x-transition:enter-end="opacity-100 translate-x-0" />
-            <img src="img/WA0028.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
-                x-transition:enter="transition-all ease-in-out duration-1700 delay-170"
-                x-transition:enter-start="opacity-0 translate-x-170"
-                x-transition:enter-end="opacity-100 translate-x-0" />
-            <img src="img/WA0030.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
-                x-transition:enter="transition-all ease-in-out duration-1800 delay-180"
-                x-transition:enter-start="opacity-0 translate-x-180"
-                x-transition:enter-end="opacity-100 translate-x-0" />
-        </div>
-        <div class="text-center mt-6" x-data="{ show: false}" x-intersect:enter="show = true">
-            <p class="text-sm md:text-base" x-cloak x-show="show"
-                x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
-                x-transition:enter-start="opacity-0 translate-y-100" x-transition:enter-end="opacity-100 translate-y-0">
-                Hormat Kami Yang Berbahagia
-            </p>
-            <p class="font-[ephesis] mt-4 text-3xl sm:text-4xl md:text-5xl " x-cloak x-show="show"
-                x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
-                x-transition:enter-start="opacity-0 translate-y-100" x-transition:enter-end="opacity-100 translate-y-0">
-                dr. Angga & dr. Laras
-            </p>
-            <img class="justify-self-center w-40" src="img/assets/8.png" alt="" />
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div x-data="{ show: false, modal: false }" x-intersect:enter="show = true">
+                <button class="cursor-pointer" x-on:click="modal = true">
+                    <img src="img/WA0000.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
+                        x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
+                        x-transition:enter-start="opacity-0 translate-x-100"
+                        x-transition:enter-end="opacity-100 translate-x-0" />
+                </button>
+                <template x-teleport="body">
+                    <div x-show="modal"
+                        class="fixed flex justify-center items-center inset-0 z-50 p-4 bg-black/50 backdrop-blur-xs">
+                        <div x-on:click.outside="modal = false" class="relative bg-transparent">
+                            <img src="img/WA0000.jpg" alt="" class="rounded-lg max-h-dvh" x-transition>
+                            <button x-on:click="modal = false"
+                                class="absolute top-0 right-0 bg-rose-600 text-white rounded-full m-2 p-1.5 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div x-data="{ show: false, modal: false }" x-intersect:enter="show = true">
+                <button class="cursor-pointer" x-on:click="modal = true">
+                    <img src="img/WA0003.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
+                        x-transition:enter="transition-all ease-in-out duration-1100 delay-110"
+                        x-transition:enter-start="opacity-0 translate-x-110"
+                        x-transition:enter-end="opacity-100 translate-x-0" />
+                </button>
+                <template x-teleport="body">
+                    <div x-show="modal"
+                        class="fixed flex justify-center items-center inset-0 z-50 p-4 bg-black/50 backdrop-blur-xs">
+                        <div x-on:click.outside="modal = false" class="relative bg-transparent">
+                            <img src="img/WA0003.jpg" alt="" class="rounded-lg max-h-dvh" x-transition>
+                            <button x-on:click="modal = false"
+                                class="absolute top-0 right-0 bg-rose-600 text-white rounded-full m-2 p-1.5 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div x-data="{ show: false, modal: false }" x-intersect:enter="show = true">
+                <button class="cursor-pointer" x-on:click="modal = true">
+                    <img src="img/WA0002.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
+                        x-transition:enter="transition-all ease-in-out duration-1200 delay-120"
+                        x-transition:enter-start="opacity-0 translate-x-120"
+                        x-transition:enter-end="opacity-100 translate-x-0" />
+                </button>
+                <template x-teleport="body">
+                    <div x-show="modal"
+                        class="fixed flex justify-center items-center inset-0 z-50 p-4 bg-black/50 backdrop-blur-xs">
+                        <div x-on:click.outside="modal = false" class="relative bg-transparent">
+                            <img src="img/WA0002.jpg" alt="" class="rounded-lg max-h-dvh" x-transition>
+                            <button x-on:click="modal = false"
+                                class="absolute top-0 right-0 bg-rose-600 text-white rounded-full m-2 p-1.5 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div x-data="{ show: false, modal: false }" x-intersect:enter="show = true">
+                <button class="cursor-pointer" x-on:click="modal = true">
+                    <img src="img/WA0007.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
+                        x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
+                        x-transition:enter-start="opacity-0 translate-x-100"
+                        x-transition:enter-end="opacity-100 translate-x-0" />
+                </button>
+                <template x-teleport="body">
+                    <div x-show="modal"
+                        class="fixed flex justify-center items-center inset-0 z-50 p-4 bg-black/50 backdrop-blur-xs">
+                        <div x-on:click.outside="modal = false" class="relative bg-transparent">
+                            <img src="img/WA0007.jpg" alt="" class="rounded-lg max-h-dvh" x-transition>
+                            <button x-on:click="modal = false"
+                                class="absolute top-0 right-0 bg-rose-600 text-white rounded-full m-2 p-1.5 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div x-data="{ show: false, modal: false }" x-intersect:enter="show = true">
+                <button class="cursor-pointer" x-on:click="modal = true">
+                    <img src="img/WA0004.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
+                        x-transition:enter="transition-all ease-in-out duration-1100 delay-110"
+                        x-transition:enter-start="opacity-0 translate-x-110"
+                        x-transition:enter-end="opacity-100 translate-x-0" />
+                </button>
+                <template x-teleport="body">
+                    <div x-show="modal"
+                        class="fixed flex justify-center items-center inset-0 z-50 p-4 bg-black/50 backdrop-blur-xs">
+                        <div x-on:click.outside="modal = false" class="relative bg-transparent">
+                            <img src="img/WA0004.jpg" alt="" class="rounded-lg max-h-dvh" x-transition>
+                            <button x-on:click="modal = false"
+                                class="absolute top-0 right-0 bg-rose-600 text-white rounded-full m-2 p-1.5 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div x-data="{ show: false, modal: false }" x-intersect:enter="show = true">
+                <button class="cursor-pointer" x-on:click="modal = true">
+                    <img src="img/WA0008.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
+                        x-transition:enter="transition-all ease-in-out duration-1200 delay-120"
+                        x-transition:enter-start="opacity-0 translate-x-120"
+                        x-transition:enter-end="opacity-100 translate-x-0" />
+                </button>
+                <template x-teleport="body">
+                    <div x-show="modal"
+                        class="fixed flex justify-center items-center inset-0 z-50 p-4 bg-black/50 backdrop-blur-xs">
+                        <div x-on:click.outside="modal = false" class="relative bg-transparent">
+                            <img src="img/WA0008.jpg" alt="" class="rounded-lg max-h-dvh" x-transition>
+                            <button x-on:click="modal = false"
+                                class="absolute top-0 right-0 bg-rose-600 text-white rounded-full m-2 p-1.5 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div x-data="{ show: false, modal: false }" x-intersect:enter="show = true">
+                <button class="cursor-pointer" x-on:click="modal = true">
+                    <img src="img/WA0011.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
+                        x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
+                        x-transition:enter-start="opacity-0 translate-x-100"
+                        x-transition:enter-end="opacity-100 translate-x-0" />
+                </button>
+                <template x-teleport="body">
+                    <div x-show="modal"
+                        class="fixed flex justify-center items-center inset-0 z-50 p-4 bg-black/50 backdrop-blur-xs">
+                        <div x-on:click.outside="modal = false" class="relative bg-transparent">
+                            <img src="img/WA0011.jpg" alt="" class="rounded-lg max-h-dvh" x-transition>
+                            <button x-on:click="modal = false"
+                                class="absolute top-0 right-0 bg-rose-600 text-white rounded-full m-2 p-1.5 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div x-data="{ show: false, modal: false }" x-intersect:enter="show = true">
+                <button class="cursor-pointer" x-on:click="modal = true">
+                    <img src="img/WA0012.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
+                        x-transition:enter="transition-all ease-in-out duration-1100 delay-110"
+                        x-transition:enter-start="opacity-0 translate-x-110"
+                        x-transition:enter-end="opacity-100 translate-x-0" />
+                </button>
+                <template x-teleport="body">
+                    <div x-show="modal"
+                        class="fixed flex justify-center items-center inset-0 z-50 p-4 bg-black/50 backdrop-blur-xs">
+                        <div x-on:click.outside="modal = false" class="relative bg-transparent">
+                            <img src="img/WA0012.jpg" alt="" class="rounded-lg max-h-dvh" x-transition>
+                            <button x-on:click="modal = false"
+                                class="absolute top-0 right-0 bg-rose-600 text-white rounded-full m-2 p-1.5 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div x-data="{ show: false, modal: false }" x-intersect:enter="show = true">
+                <button class="cursor-pointer" x-on:click="modal = true">
+                    <img src="img/WA0013.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
+                        x-transition:enter="transition-all ease-in-out duration-1200 delay-120"
+                        x-transition:enter-start="opacity-0 translate-x-120"
+                        x-transition:enter-end="opacity-100 translate-x-0" />
+                </button>
+                <template x-teleport="body">
+                    <div x-show="modal"
+                        class="fixed flex justify-center items-center inset-0 z-50 p-4 bg-black/50 backdrop-blur-xs">
+                        <div x-on:click.outside="modal = false" class="relative bg-transparent">
+                            <img src="img/WA0013.jpg" alt="" class="rounded-lg max-h-dvh" x-transition>
+                            <button x-on:click="modal = false"
+                                class="absolute top-0 right-0 bg-rose-600 text-white rounded-full m-2 p-1.5 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div x-data="{ show: false, modal: false }" x-intersect:enter="show = true">
+                <button class="cursor-pointer" x-on:click="modal = true">
+                    <img src="img/WA0021.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
+                        x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
+                        x-transition:enter-start="opacity-0 translate-x-100"
+                        x-transition:enter-end="opacity-100 translate-x-0" />
+                </button>
+                <template x-teleport="body">
+                    <div x-show="modal"
+                        class="fixed flex justify-center items-center inset-0 z-50 p-4 bg-black/50 backdrop-blur-xs">
+                        <div x-on:click.outside="modal = false" class="relative bg-transparent">
+                            <img src="img/WA0021.jpg" alt="" class="rounded-lg max-h-dvh" x-transition>
+                            <button x-on:click="modal = false"
+                                class="absolute top-0 right-0 bg-rose-600 text-white rounded-full m-2 p-1.5 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div x-data="{ show: false, modal: false }" x-intersect:enter="show = true">
+                <button class="cursor-pointer" x-on:click="modal = true">
+                    <img src="img/WA0028.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
+                        x-transition:enter="transition-all ease-in-out duration-1100 delay-110"
+                        x-transition:enter-start="opacity-0 translate-x-110"
+                        x-transition:enter-end="opacity-100 translate-x-0" />
+                </button>
+                <template x-teleport="body">
+                    <div x-show="modal"
+                        class="fixed flex justify-center items-center inset-0 z-50 p-4 bg-black/50 backdrop-blur-xs">
+                        <div x-on:click.outside="modal = false" class="relative bg-transparent">
+                            <img src="img/WA0028.jpg" alt="" class="rounded-lg max-h-dvh" x-transition>
+                            <button x-on:click="modal = false"
+                                class="absolute top-0 right-0 bg-rose-600 text-white rounded-full m-2 p-1.5 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div x-data="{ show: false, modal: false }" x-intersect:enter="show = true">
+                <button class="cursor-pointer" x-on:click="modal = true">
+                    <img src="img/WA0030.jpg" alt="" class="object-cover shadow-lg rounded-lg" x-cloak x-show="show"
+                        x-transition:enter="transition-all ease-in-out duration-1200 delay-120"
+                        x-transition:enter-start="opacity-0 translate-x-120"
+                        x-transition:enter-end="opacity-100 translate-x-0" />
+                </button>
+                <template x-teleport="body">
+                    <div x-show="modal"
+                        class="fixed flex justify-center items-center inset-0 z-50 p-4 bg-black/50 backdrop-blur-xs">
+                        <div x-on:click.outside="modal = false" class="relative bg-transparent">
+                            <img src="img/WA0030.jpg" alt="" class="rounded-lg max-h-dvh" x-transition>
+                            <button x-on:click="modal = false"
+                                class="absolute top-0 right-0 bg-rose-600 text-white rounded-full m-2 p-1.5 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </template>
+            </div>
         </div>
     </div>
-    <div class="w-full text-center p-8 mt-0" x-data="{ show: false}" x-intersect:enter="show = true">
-        <h2 class="font-[ephesis] text-3xl md:text-4xl lg:text-5xl" x-cloak x-show="show"
-            x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
-            x-transition:enter-start="opacity-0 translate-y-20" x-transition:enter-end="opacity-100 translate-y-0">
-            Happy Wedding!
-        </h2>
+    <div class="w-full bg-rose-200 p-6 mt-10">
+        <div class="w-3xs md:w-xs relative text-center mx-auto z-10" x-data="{ show: false}"
+            x-intersect:enter.threshold.50="show = true">
+            <h2 class="font-[ephesis] text-3xl md:text-4xl lg:text-5xl" x-cloak x-show="show"
+                x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
+                x-transition:enter-start="opacity-0 translate-x-50" x-transition:enter-end="opacity-100 translate-x-0">
+                Kirim Hadiah
+            </h2>
+            <img src="img/assets/14.png" alt="" class="absolute w-24 lg:w-30 lg:-top-15 -top-10 -z-10" x-cloak
+                x-show="show" x-transition:enter="transition-all ease-in-out duration-1100 delay-120"
+                x-transition:enter-start="opacity-0 -translate-x-50" x-transition:enter-end="opacity-100 translate-x-0">
+        </div>
+    </div>
+    <div class="max-w-screen-sm mx-auto p-4">
+        <p class="text-center text-sm md:text-base">Bagi Bapak/Ibu/Saudara/i yang ingin mengirimkan hadiah pernikahan
+            dapat melalui virtual
+            atau e-wallet di
+            bawah ini:</p>
+    </div>
+    <div class="w-full bg-rose-200 p-4">
+        <div class="max-w-screen-lg mx-auto">
+            <div class="text-center mt-6" x-data="{ show: false}" x-intersect:enter="show = true">
+                <p class="text-sm md:text-base" x-cloak x-show="show"
+                    x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
+                    x-transition:enter-start="opacity-0 translate-y-100"
+                    x-transition:enter-end="opacity-100 translate-y-0">
+                    Hormat Kami Yang Berbahagia
+                </p>
+                <p class="font-[ephesis] mt-4 text-3xl sm:text-4xl md:text-5xl " x-cloak x-show="show"
+                    x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
+                    x-transition:enter-start="opacity-0 translate-y-100"
+                    x-transition:enter-end="opacity-100 translate-y-0">
+                    dr. Angga & dr. Laras
+                </p>
+                <img class="justify-self-center w-40" src="img/assets/8.png" alt="" />
+            </div>
+        </div>
+        <div class="w-full text-center p-8 mt-0" x-data="{ show: false}" x-intersect:enter="show = true">
+            <h2 class="font-[ephesis] text-3xl md:text-4xl lg:text-5xl" x-cloak x-show="show"
+                x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
+                x-transition:enter-start="opacity-0 translate-y-20" x-transition:enter-end="opacity-100 translate-y-0">
+                Happy Wedding!
+            </h2>
+        </div>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
