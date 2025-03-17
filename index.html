@@ -99,12 +99,14 @@
                         data-class-out="invisible -translate-y-10 opacity-0">
                         <p class="text-white text-sm md:text-base">11.04.2025</p>
                     </div>
-                    <div class="mt-30 w-50 flex flex-col place-self-center transform transition duration-1000 delay-200 invisible translate-y-25 opacity-0"
+                    <div class="mt-30 justify-items-center transform transition duration-1000 delay-200 invisible translate-y-25 opacity-0"
                         data-class-in="visible translate-y-0 opacity-100"
                         data-class-out="invisible translate-y-25 opacity-0">
-                        <p class="text-white text-sm">Kepada Bapak/Ibu/Saudara/i</p>
-                        <div class="border border-white p-4 mt-4 rounded-lg w-full">
-                            <p class="text-white font-bold" id="guess_name"></p>
+                        <div class="w-50">
+                            <p class="text-white text-sm">Kepada Bapak/Ibu/Saudara/i</p>
+                            <div class="border border-white p-4 mt-4 rounded-lg w-full">
+                                <p class="text-white font-bold" id="guess_name"></p>
+                            </div>
                         </div>
                     </div>
                     <div class="mt-6 inline-flex items-center gap-2 justify-center bg-rose-500 text-white py-2 px-6 rounded-full cursor-pointer font-bold hover:bg-rose-400 transform transition duration-1000 delay-300 invisible translate-y-15 opacity-0"
@@ -551,7 +553,7 @@
                 <div class="cursor-pointer transform transition duration-1000 delay-100 invisible translate-y-100 opacity-0"
                     data-class-in="visible translate-y-0 opacity-100"
                     data-class-out="invisible translate-y-100 opacity-0" x-on:click="modal = true">
-                    <img src="img/WA0000.jpg" alt="" class="object-cover shadow-lg rounded-lg h-full" />
+                    <img src="img/WA0000.jpg" alt="" class="object-cover shadow-lg rounded-lg" />
                 </div>
                 <template x-teleport="body">
                     <div x-show="modal"
@@ -723,7 +725,7 @@
                 <div class="cursor-pointer transform transition duration-1100 delay-250 invisible translate-y-100 opacity-0"
                     data-class-in="visible translate-y-0 opacity-100"
                     data-class-out="invisible translate-y-100 opacity-0" x-on:click="modal = true">
-                    <img src="img/WA0012.jpg" alt="" class="object-cover shadow-lg rounded-lg h-full"
+                    <img src="img/WA0012.jpg" alt="" class="object-cover shadow-lg rounded-lg"
                         x-transition:enter="transition-all ease-in-out duration-1100 delay-110"
                         x-transition:enter-start="opacity-0 translate-x-110"
                         x-transition:enter-end="opacity-100 translate-x-0" />
@@ -748,8 +750,7 @@
                 <div class="cursor-pointer transform transition duration-1000 delay-100 invisible translate-y-100 opacity-0"
                     data-class-in="visible translate-y-0 opacity-100"
                     data-class-out="invisible translate-y-100 opacity-0" x-on:click="modal = true">
-                    <img src="img/WA0013.jpg" alt=""
-                        class="object-cover object-center shadow-lg rounded-lg h-full w-full"
+                    <img src="img/WA0013.jpg" alt="" class="object-cover shadow-lg rounded-lg"
                         x-transition:enter="transition-all ease-in-out duration-1200 delay-120"
                         x-transition:enter-start="opacity-0 translate-x-120"
                         x-transition:enter-end="opacity-100 translate-x-0" />
@@ -774,8 +775,7 @@
                 <div class="cursor-pointer h-full transform transition duration-1100 delay-250 invisible translate-y-100 opacity-0"
                     data-class-in="visible translate-y-0 opacity-100"
                     data-class-out="invisible translate-y-100 opacity-0" x-on:click="modal = true">
-                    <img src="img/WA0021.jpg" alt=""
-                        class="object-cover object-center shadow-lg rounded-lg h-full w-full"
+                    <img src="img/WA0021.jpg" alt="" class="object-cover shadow-lg rounded-lg"
                         x-transition:enter="transition-all ease-in-out duration-1000 delay-100"
                         x-transition:enter-start="opacity-0 translate-x-100"
                         x-transition:enter-end="opacity-100 translate-x-0" />
@@ -784,7 +784,7 @@
                     <div x-show="modal"
                         class="fixed flex justify-center items-center inset-0 z-50 p-4 bg-black/50 backdrop-blur-xs">
                         <div x-on:click.outside="modal = false" class="relative bg-transparent">
-                            <img src="img/WA0021.jpg" alt="" class="rounded-lg max-h-dvh" x-transition>
+                            <img src="img/WA0021.jpg" alt="" class="rounded-lg max-h-dvh">
                             <button x-on:click="modal = false"
                                 class="absolute top-0 right-0 bg-rose-600 text-white rounded-full m-2 p-1.5 cursor-pointer">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -958,7 +958,7 @@
     </div>
     <div class="w-full bg-rose-200 p-4 mt-10 bottom-0">
         <div class="max-w-screen-lg mx-auto">
-            <div class="text-center mt-6" data-observe>
+            <div class="text-center mt-6 justify-items-center" data-observe>
                 <p class="text-sm md:text-base transform transition duration-1000 invisible translate-y-100 opacity-0"
                     data-class-in="visible translate-y-0 opacity-100"
                     data-class-out="invisible translate-y-100 opacity-0">
@@ -969,7 +969,7 @@
                     data-class-out="invisible translate-y-100 opacity-0">
                     dr. Angga & dr. Laras
                 </p>
-                <img class="justify-self-center w-40" src="img/assets/8.png" alt="" />
+                <img class=" w-40" src="img/assets/8.png" alt="" />
             </div>
         </div>
         <div class="w-full text-center p-8 mt-0" data-observe>
