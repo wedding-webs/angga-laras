@@ -14,14 +14,108 @@
 
 <body class="antialiased font-[lora] overflow-x-hidden touch-pan-y">
     <div class="w-full mx-auto">
-        <div class="max-w-screen-xl mx-auto p-4 text-center">
-            <form action="">
-                <label for="">Guess List</label>
-                <input type="text">
-                <button type="submit">Submit</button>
+        <div class="max-w-screen-xl mx-auto p-4 text-center bg-rose-200">
+            <form action="" id="guessForm">
+                <label for="guess_input">Guess List</label>
+                <input id="guess_input" name="guess_input" type="text" class="rounded-lg outline p-2">
+                <button type="submit"
+                    class="cursor-pointer bg-rose-600 px-6 py-2 rounded-lg text-white border-rose-600 border">Submit</button>
             </form>
+            <div class="mt-10">
+                <table id="guessTableBody" class=" border-collapse border border-gray-400 justify-self-center mt-6">
+
+                </table>
+            </div>
         </div>
     </div>
+    <script>
+        // Function to display all guests from localStorage
+        function displayGuests() {
+            const guestsJSON = localStorage.getItem('guestsList') || '[]';
+            const guests = JSON.parse(guestsJSON);
+            const tableBody = document.getElementById('guestTableBody');
+
+            // Clear existing table content
+            tableBody.innerHTML = '';
+
+            // Add each guest to the table
+            guests.forEach((guest, index) => {
+                const row = document.createElement('tr');
+
+                // Guest name cell
+                const nameCell = document.createElement('td');
+                nameCell.className = 'border border-gray-400 p-4';
+                nameCell.textContent = guest;
+                row.appendChild(nameCell);
+
+                // Actions cell
+                const actionsCell = document.createElement('td');
+                actionsCell.className = 'border border-gray-400 p-4';
+
+                // View link
+                const viewLink = document.createElement('a');
+                viewLink.href = 'javascript:void(0)';
+                viewLink.className = 'text-rose-600 hover:underline';
+                viewLink.textContent = 'View';
+                viewLink.addEventListener('click', function () {
+                    localStorage.setItem('guestName', guest);
+                    window.open('index.html', '_blank');
+                });
+                actionsCell.appendChild(viewLink);
+
+                // Add space between links
+                actionsCell.appendChild(document.createTextNode(' '));
+
+                // Delete link
+                const deleteLink = document.createElement('a');
+                deleteLink.href = 'javascript:void(0)';
+                deleteLink.className = 'text-rose-600 hover:underline';
+                deleteLink.textContent = 'Delete';
+                deleteLink.addEventListener('click', function () {
+                    // Remove the guest from the array
+                    guests.splice(index, 1);
+                    // Update localStorage
+                    localStorage.setItem('guestsList', JSON.stringify(guests));
+                    // Refresh the display
+                    displayGuests();
+                });
+                actionsCell.appendChild(deleteLink);
+
+                row.appendChild(actionsCell);
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Load existing guests when page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            displayGuests();
+        });
+
+        // Form submission handler
+        document.getElementById('guessForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const guestName = document.getElementById('guess_input').value.trim();
+
+            if (guestName) {
+                // Get existing guests list or create empty array
+                const guestsJSON = localStorage.getItem('guestsList') || '[]';
+                const guests = JSON.parse(guestsJSON);
+
+                // Add new guest
+                guests.push(guestName);
+
+                // Save updated list
+                localStorage.setItem('guestsList', JSON.stringify(guests));
+
+                // Update table display
+                displayGuests();
+
+                // Clear input field
+                document.getElementById('guess_input').value = '';
+            }
+        });
+    </script>
 </body>
 
 </html>
