@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
+
+
     let isScrollingUp;
     let lastScrollY
     // Create a global object for scroll direction that can be accessed by Alpine
@@ -55,26 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         })
     }
-    // function intFunction(entries) {
-    //     entries.forEach(entry => {
-    //         const classIn = entry.target.getAttribute('data-class-in');
-    //         console.log(classIn)
-    //         const classOut = entry.target.getAttribute('data-class-out');
-    //         if (entry.isIntersecting) {
-    //             // console.log(entry.target.getAttribute('data-class-in').split(' '))
-    //             if (classOut) {
-    //                 entry.target.classList.remove(...classOut.split(' '))
-    //             }
-    //             if (classIn) {
-    //                 entry.target.classList.add(...classIn.split(' '))
-    //             }
-    //         } else if (window.alpineScrollDirection.isScrollingUp) {
-    //             // Only reset visibility when scrolling up
-    //             entry.target.classList.add(...classOut.split(' '))
-    //             entry.target.classList.remove(...classIn.split(' '))
-    //         }
-    //     })
-    // }
     // Use better options for more control
     const options = {
         threshold: 0.1, // Element is considered visible when 10% is visible
@@ -159,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // copy button
-    document.querySelectorAll('[copy-button]').forEach(button => {
+    document.querySelectorAll('[data-copy-button]').forEach(button => {
         // console.log(button.dataset)
         button.addEventListener('click', function () {
             const targetId = this.dataset.copyTarget;
@@ -170,10 +152,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Visual feedback
                 const originalText = this.innerHTML;
                 this.innerHTML = 'Copied!';
-                // this.classList.add('bg-green-600');
                 setTimeout(() => {
                     this.innerHTML = originalText;
-                    // this.classList.remove('bg-green-600');
                 }, 2000);
             }).catch(err => {
                 console.error('Failed to copy:', err);
