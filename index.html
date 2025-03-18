@@ -875,17 +875,19 @@
                 bawah ini:</p>
         </div>
         <div class="mx-auto mt-4" x-data="{ open: false }">
-            <button x-on:click="open = !open"
-                class="cursor-pointer grid grid-flow-col items-center justify-self-center gap-2 px-6 py-2 rounded-full bg-rose-600 text-white hover:bg-rose-500">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
-                </svg>
-                <p>
-                    Kirim Hadiah
-                </p>
-            </button>
+            <div class="grid justify-items-center">
+                <button x-on:click="open = !open"
+                    class="cursor-pointer grid grid-flow-col items-center gap-2 px-6 py-2 rounded-full bg-rose-600 text-white hover:bg-rose-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                    </svg>
+                    <p>
+                        Kirim Hadiah
+                    </p>
+                </button>
+            </div>
             <div x-show="open"
                 class="bg-rose-200/50 backdrop-blur-sm rounded-xl h-max max-w-md shadow-lg p-4 inset-shadow-sm mx-auto mt-4 flex flex-col gap-2 relative z-10">
                 <div class="absolute size-30 rounded-full bg-rose-600/50 blur-xl -z-11 top-15 right-15"></div>
@@ -898,12 +900,12 @@
                     <img src="img/assets/chip-card.png" alt="" class="w-20 lg:w-30">
                 </div>
                 <div class="ml-5">
-                    <p class="font-bold" id="card_number">5557 0100 9948 534</p>
+                    <p class="font-bold" id="briNumber">5557&nbsp;0100&nbsp;9948&nbsp;534</p>
                     <p>a/n <span class="font-semibold">Angga Setiawan</span></p>
                 </div>
                 <div class="justify-items-end">
                     <div>
-                        <button id="copy"
+                        <button copy-button data-copy-target="briNumber"
                             class="cursor-pointer px-6 py-2 rounded-full bg-rose-600 text-white shadow-sm inset-shadow-xs hover:bg-rose-500">
                             Copy
                         </button>
@@ -920,12 +922,12 @@
                     <img src="img/assets/Dana_logo.png" alt="" class="w-25 lg:w-30">
                 </div>
                 <div class="ml-8 mt-4">
-                    <p class="font-bold" id="card_number">0813&nbsp;7808&nbsp;1080</p>
+                    <p class="font-bold" id="danaNumber">0813&nbsp;7808&nbsp;1080</p>
                     <p>a/n <span class="font-semibold">Angga Setiawan</span></p>
                 </div>
                 <div class="justify-items-end">
                     <div>
-                        <button id="copy"
+                        <button copy-button data-copy-target="danaNumber"
                             class="cursor-pointer px-6 py-2 rounded-full bg-rose-600 text-white shadow-sm inset-shadow-xs hover:bg-rose-500">
                             Copy
                         </button>
@@ -944,12 +946,12 @@
                     <img src="img/assets/chip-card.png" alt="" class="w-20 lg:w-30">
                 </div>
                 <div class="ml-5">
-                    <p class="font-bold" id="card_number">1819152403</p>
+                    <p class="font-bold" id="bniNumber">1819152403</p>
                     <p>a/n <span class="font-semibold">Laras Kusumaningtyas</span></p>
                 </div>
                 <div class="justify-items-end">
                     <div>
-                        <button id="copy"
+                        <button copy-button data-copy-target="bniNumber"
                             class="cursor-pointer px-6 py-2 rounded-full bg-rose-600 text-white shadow-sm inset-shadow-xs hover:bg-rose-500">
                             Copy
                         </button>
