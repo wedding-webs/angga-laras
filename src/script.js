@@ -157,4 +157,28 @@ document.addEventListener('DOMContentLoaded', function () {
             pauseIcon.classList.add('hidden');
         }
     });
+
+    // copy button
+    document.querySelectorAll('[copy-button]').forEach(button => {
+        // console.log(button.dataset)
+        button.addEventListener('click', function () {
+            const targetId = this.dataset.copyTarget;
+            const targetElement = document.getElementById(targetId);
+            const textToCopy = targetElement.textContent.replace(/\s/g, '');
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                // Visual feedback
+                const originalText = this.innerHTML;
+                this.innerHTML = 'Copied!';
+                // this.classList.add('bg-green-600');
+                setTimeout(() => {
+                    this.innerHTML = originalText;
+                    // this.classList.remove('bg-green-600');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+            });
+
+        })
+    })
 });
