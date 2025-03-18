@@ -99,7 +99,7 @@
                         data-class-out="invisible -translate-y-10 opacity-0">
                         <p class="text-white text-sm md:text-base">11.04.2025</p>
                     </div>
-                    <div class="mt-30 justify-items-center [-webkit-justify-items:center] transform transition duration-1000 delay-200 invisible translate-y-25 opacity-0"
+                    <div class="mt-30 grid justify-items-center transform transition duration-1000 delay-200 invisible translate-y-25 opacity-0"
                         data-class-in="visible translate-y-0 opacity-100"
                         data-class-out="invisible translate-y-25 opacity-0">
                         <div class="w-50">
@@ -865,7 +865,7 @@
         </div>
     </div>
     <div class="max-w-screen-lg mx-auto p-4">
-        <div class="w-sm mx-auto" data-observe>
+        <div class="max-w-md mx-auto" data-observe>
             <p class="text-center text-sm md:text-base transform transition duration-1000 invisible translate-y-50 opacity-0"
                 data-class-in="visible translate-y-0 opacity-100" data-class-out="invisible translate-y-50 opacity-0">
                 Bagi Bapak/Ibu/Saudara/i yang ingin mengirimkan hadiah
@@ -874,26 +874,28 @@
                 atau e-wallet di
                 bawah ini:</p>
         </div>
-        <div class="justify-items-center [-webkit-justify-items:center] mx-auto mt-4" x-data="{ open: false }">
+        <div class="mx-auto mt-4" x-data="{ open: false }">
             <button x-on:click="open = !open"
-                class="cursor-pointer flex items-center [-webkit-align-items:center] gap-2 px-6 py-2 rounded-full bg-rose-600 text-white hover:bg-rose-500">
+                class="cursor-pointer grid grid-flow-col items-center justify-self-center gap-2 px-6 py-2 rounded-full bg-rose-600 text-white hover:bg-rose-500">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
                 </svg>
-                Kirim Hadiah
+                <p>
+                    Kirim Hadiah
+                </p>
             </button>
             <div x-show="open"
-                class="bg-rose-200/50 backdrop-blur-sm rounded-xl h-max w-md shadow-lg p-4 inset-shadow-sm mx-auto mt-4 flex flex-col gap-2 relative z-10">
+                class="bg-rose-200/50 backdrop-blur-sm rounded-xl h-max max-w-md shadow-lg p-4 inset-shadow-sm mx-auto mt-4 flex flex-col gap-2 relative z-10">
                 <div class="absolute size-30 rounded-full bg-rose-600/50 blur-xl -z-11 top-15 right-15"></div>
                 <div class="absolute size-15 rounded-full bg-blue-600/50 blur-xl -z-11 top-35 right-35"></div>
                 <div class="absolute size-20 rounded-full bg-rose-600/50 blur-xl -z-11 top-30 left-10"></div>
                 <div class="justify-items-end">
-                    <img src="img/assets/Logo_BRI.png" alt="" class="w-30">
+                    <img src="img/assets/Logo_BRI.png" alt="" class="w-25 lg:w-30">
                 </div>
                 <div class="justify-items-start">
-                    <img src="img/assets/chip-card.png" alt="" class="w-30">
+                    <img src="img/assets/chip-card.png" alt="" class="w-20 lg:w-30">
                 </div>
                 <div class="ml-5">
                     <p class="font-bold" id="card_number">5557 0100 9948 534</p>
@@ -909,13 +911,13 @@
                 </div>
             </div>
             <div x-show="open"
-                class="bg-rose-200/50 backdrop-blur-sm rounded-xl h-max w-md shadow-lg p-4 inset-shadow-sm mx-auto mt-4 flex flex-col gap-2 relative z-10">
+                class="bg-rose-200/50 backdrop-blur-sm rounded-xl h-max max-w-md shadow-lg p-4 inset-shadow-sm mx-auto mt-4 flex flex-col gap-2 relative z-10">
                 <div class="absolute size-25 rounded-full bg-rose-600/40 blur-xl -z-11 top-15 right-15"></div>
                 <div class="absolute size-15 rounded-full bg-blue-600/40 blur-xl -z-11 top-20 right-35"></div>
                 <div class="absolute size-15 rounded-full bg-rose-400/40 blur-xl -z-11 top-10 left-30"></div>
                 <div class="absolute size-20 rounded-full bg-rose-600/30 blur-xl -z-11 top-15 left-10"></div>
                 <div class="justify-items-start">
-                    <img src="img/assets/Dana_logo.png" alt="" class="w-30">
+                    <img src="img/assets/Dana_logo.png" alt="" class="w-25 lg:w-30">
                 </div>
                 <div class="ml-8 mt-4">
                     <p class="font-bold" id="card_number">0813&nbsp;7808&nbsp;1080</p>
@@ -931,15 +933,15 @@
                 </div>
             </div>
             <div x-show="open"
-                class="bg-rose-200/50 backdrop-blur-sm rounded-xl h-max w-md shadow-lg p-4 inset-shadow-sm mx-auto mt-4 flex flex-col gap-2 relative z-10">
+                class="bg-rose-200/50 backdrop-blur-sm rounded-xl h-max max-w-md shadow-lg p-4 inset-shadow-sm mx-auto mt-4 flex flex-col gap-2 relative z-10">
                 <div class="absolute size-30 rounded-full bg-fuchsia-400 blur-xl -z-11 top-15 right-15"></div>
                 <div class="absolute size-15 rounded-full bg-rose-400 blur-xl -z-11 top-15 right-60"></div>
                 <div class="absolute size-20 rounded-full bg-blue-600/50 blur-xl -z-11 top-40 left-20"></div>
                 <div class="justify-items-end">
-                    <img src="img/assets/BNI_logo.svg" alt="" class="w-30">
+                    <img src="img/assets/BNI_logo.svg" alt="" class="w-25 lg:w-30">
                 </div>
                 <div class="justify-items-start">
-                    <img src="img/assets/chip-card.png" alt="" class="w-30">
+                    <img src="img/assets/chip-card.png" alt="" class="w-20 lg:w-30">
                 </div>
                 <div class="ml-5">
                     <p class="font-bold" id="card_number">1819152403</p>
@@ -958,7 +960,7 @@
     </div>
     <div class="w-full bg-rose-200 p-4 mt-10 bottom-0">
         <div class="max-w-screen-lg mx-auto">
-            <div class="text-center mt-6 justify-items-center [-webkit-justify-items:center]" data-observe>
+            <div class="grid text-center mt-6 justify-items-center [-webkit-justify-items:center]" data-observe>
                 <p class="text-sm md:text-base transform transition duration-1000 invisible translate-y-100 opacity-0"
                     data-class-in="visible translate-y-0 opacity-100"
                     data-class-out="invisible translate-y-100 opacity-0">
